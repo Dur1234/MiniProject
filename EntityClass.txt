@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EmployeeTravelBooking_new
+{
+   public class EmployeeDetails
+    {
+        public int EmployeeId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+        public string Gender { get; set; }
+        public string Address { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public int ManagerId { get; set; }
+    }
+
+    public class AssignManager {
+        public int ManagerId { get; set; }
+        public string ManagerName { get; set; }
+    }
+
+    public class TravelRequest {
+
+        public int RequestId { get; set; }
+        public DateTime RequestDate { get; set; }
+        public string FromLocation { get; set; }
+        public string ToLocation { get; set; }
+        public int EmployeeId { get; set; }
+        public int ManagerId { get; set; }
+        public string Status { get; set; }
+    }
+
+    public class AgentDetails {
+        public string UserName { get; set; }
+        public string Password { get; set; }
+
+    }
+
+
+}
